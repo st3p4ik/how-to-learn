@@ -17,6 +17,7 @@
     /* выше установили ограничения для секции */
 }
 .header__title{
+  position: relative;
   display: flex;
   align-items:center;
   margin-left: 64px;
@@ -32,6 +33,7 @@
   top:30px;
   left:64px
 }
+
 .header__subtitle{
   position: absolute;
   bottom: 30px;
@@ -41,6 +43,9 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 1;
+}
+.link{
+text-decoration: none;
 }
 .header__main-illustration{
   position:absolute;
@@ -76,6 +81,7 @@ width: 80%;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
+  color:#2f80ed;
 }
 
 .two-columns_paragraph{
@@ -87,18 +93,17 @@ font-weight: normal;
   font-weight: bold;
 }
 
-/*.digits{
-а нужен ли...
-}*/
+.digits{
+}
 
-.section-title{
+.digits-title{
   text-align: center;
   line-height: 1.15;
   font-size:60px;
   font-weight: bold;
 }
 
-.section-subtitle{
+.digits-subtitle{
   margin-top:20px;
   text-align: center;
   line-height: 34px;
@@ -106,29 +111,99 @@ font-weight: normal;
   font-weight: normal;
 }
 
-.table{
+.digits-table{
   width:1100px;
   margin: 60px auto 100px;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  }
 
-.cell{
+.digits-cell{
   width:250px;
 }
 
-.cell_heading{
+.digits-cell_heading{
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
 }
 
-.cell_text{
+.digits-cell_text{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
+
+.feynman{
+  margin-top: 100px;
+  position: relative;
+}
+
+.feynman_title{
+
+  width:648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman_subtitle{
+  text-align: center;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 70px;
+}
+
+/*.feynman_link{
+position: absolute;
+right:48px;
+margin-top: 50vh;
+line-height: 51px;
+font-size: 36px;
+font-weight: normal;
+}
+
+.feynman_main-illustration{
+  position: absolute;
+  left:0;
+  bottom:0;
+  width: 867px;
+  height: 637px;
+}*/
+
+.kaufman{
+  background-color: #1f1f1f;
+}
+.kaufman-title_theme_dark{
+margin-top: 0;
+padding-top: 90px;
+text-align: center;
+color: white;
+line-height: 1.15;
+font-size: 60px;
+font-weight: bold;
+}
+
+.kaufman-subtitle_theme_dark{
+  padding-top: 20px;
+  text-align: center;
+color: white;
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+}
+
+.kaufman-table__theme_dark{
+  width:1100px;
+  margin: 80px auto 90px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
