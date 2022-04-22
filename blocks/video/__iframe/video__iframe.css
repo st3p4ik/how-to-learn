@@ -4,4 +4,11 @@
 
 .video__iframe{
   border: 0px;
+  width: 560px;
+  height:315px;
+}
+
+.video__iframe:hover{
+  opacity: 0.85;
+  transition-duration: 0.5s;
 }
